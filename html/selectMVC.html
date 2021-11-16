@@ -1,0 +1,42 @@
+<html>
+<head>
+  <meta charset="utf-8" />
+</head>
+<body>
+Formulario original en HTML puro <br />
+Los campos con * deben ser obligatoriamente cumplimentados.  <br />
+<form action="../php/repintar_Controlador.php" method="get">
+  (*) Nombre
+  <input type="text" name="nombre" /> <br />
+  País
+  <select name="pais">
+    <option value="PT">Portugal</option>
+    <option value="ES">España</option>
+    <option value="AN">Andorra</option>
+  </select>
+  <br />
+  (*) <label for="semaforo">Semáforo</label>
+  <input type="radio" name="semaforo" value="V" /> Verde
+  <input type="radio" name="semaforo" value="N" /> Naranja
+  <input type="radio" name="semaforo" value="R" /> Rojo  
+  <br />
+  <label for="">Aficiones</label>
+  <input type="checkbox" name="lectura" value="L" /> Lectura  
+  <input type="checkbox" name="deporte" value="D" /> Deporte  
+  <input type="checkbox" name="viajes" value="V" /> Viajes    
+  <br />
+  <label for="aficiones">Aficiones</label> <br />
+  <select name="aficiones[]" multiple="multiple">
+    <option value="L">Lectura</option>  
+    <option value="D">Deporte</option>
+    <option value="V">Viajes</option>
+  </select>  
+  <br />    
+    <textarea name="comentarios" rows="4" cols="20">Introduce tus comentarios</textarea>
+  <br />      
+  <input type="reset" value="Dejar el formulario como al cargar la página" />
+  <input type="submit" value="Enviar el formulario" />
+</form>
+</body>
+</html>    
+  
