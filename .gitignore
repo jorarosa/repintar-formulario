@@ -1,2 +1,5 @@
 # Ignorar archivos temporales
 *.tmp
+
+# Ignorar el archivo de token
+token
